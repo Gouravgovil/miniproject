@@ -1,0 +1,264 @@
+@import url();
+
+
+
+body {
+    margin: auto;
+    height: 100vh;
+    width: 100%;
+    background-color: aqua;
+}
+
+.background {
+    background: url(photo.jpg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 75%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: white;
+    margin-right: 55px;
+    text-decoration: none;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: grey;
+    bottom: -5px;
+    border-radius: 5px;
+    transform: translateY(10px);
+    opacity: 0;
+    transition: .5s ease;
+
+}
+
+.navbar a:hover:after {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    height: 550px;
+    margin-top: 20px;
+    background: transparent;
+    border-radius: 20px;
+}
+
+.item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 58%;
+    height: 71%;
+    color: white;
+    background: transparent;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.item .Logo {
+    font-size: 45px;
+    color: lightgoldenrodyellow;
+    text-align: right;
+}
+
+.text-item h2 {
+    font-size: 50px;
+    line-height: 1;
+    color: lightgoldenrodyellow;
+    text-align: right;
+}
+
+.text-item p {
+    font-size: 20px;
+    margin: 20px 0;
+    text-align: right;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.container .login-section {
+    position: absolute;
+    top: 0;
+    right: -326px;
+    width: calc(100% - 58%);
+    height: 100%;
+    color: black;
+}
+
+.login-section .form-box {
+    border: thick solid black;
+    border-radius: 10%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-section .form-box {
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.form-box input-box {
+
+    width: 340px;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+    position: relative;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+
+    font-size: 18px;
+    padding: 6px 6px 6px 6px;
+}
+
+
+.input-box .icon {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    font-size: 19px;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+
+}
+
+
+.remember-password {
+    font-size: 15px;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.remember-password label input {
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-password a {
+    color: aqua;
+    text-decoration: none;
+}
+
+.remember-password a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    background: white;
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background: black;
+    font-size: 16px;
+    color: white;
+    box-shadow: rgb(0, 0, 0, 0.4);
+
+
+}
+
+.create-account {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 25px;
+}
+
+.create-account p a {
+    color: white;
+    font-weight: 600px;
+    text-decoration: none;
+
+}
+
+.create-account p a:hover {
+    text-decoration: underline;
+}
